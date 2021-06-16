@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Opdracht Semantische HTML</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<h1>Mijn titel tekst</h1>
+		<nav>
+			<p><img src="stefan.jpg" alt="stefan" width="100" height="100"></p>
+			<p><a href="about.html" class="entry">Informatie over mijzelf</a></p>
+		</nav>
+	</header>
+	<article>
+		<section>
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">Over-ons</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</section>
+	</article>
+	<article>
+		<section>
+			<main>
+				<h2>Netlify contactformulier</h2>
+				<form class="my-form" name="contact" method="POST" data-netlify="true">
+					<div class="my-form-group">
+						<label>Naam: </label>
+						<input type="text" name="name" />
+					</div>
+					<div class="my-form-group">
+						<label>Email: </label>
+						<input type="text" name="email" />
+					</div>
+					<div class="my-form-group">
+						<label>Tel: </label>
+						<input type="phone" name="phone" />
+					</div>
+					<div class="my-form-group">
+						<label>Leeftijd: </label>
+						<input type="age" name="age" size="16" />
+					</div>
+					<div class="my-form-group">
+						<label>Geboortedatum: </label>
+						<input type="date" name="geboortedatum" />
+					</div>
+					<div class="my-form-group">
+						<label>Geslacht: </label>
+						<input type="radio" name="radio" checked />N.v.t.<br>
+						<input type="radio" name="radio" /> Man<br>
+						<input type="radio" name="radio" /> Vrouw<br>
+					</div>
+					<div class="my-form-group">
+						<label>Vakantielanden: </label>
+						<input type="checkbox" name="checkbox" /> Frans<br>
+						<input type="checkbox" name="checkbox" /> Italiaans<br>
+						<input type="checkbox" name="checkbox" /> Spaans<br>
+					</div>
+					<div class="my-form-group">
+						<label>Favoriete kleur: </label>
+						<input type="color" name="Frans" value="#e66465" /> Rood.<br>
+						<input type="color" name="Frans" value="#f6b73c" /> Oranje.<br>
+					</div>
+					<div class="my-form-group">
+						<label>Biografie: <textarea rows="10" name="message"></textarea></label>
+					</div>
+					<div class="my-form-group upload">
+						<label for="connect" class="format"><i class="fa fa-upload"></i>Upload</label>
+						<span id="filename"></span>
+						<input type="file" id="connect">
+					</div>
+					<div class="my-form-group">
+						<label>Voeg uw website toe:</label>
+						<input type="url" id="homepage" name="homepage" placeholder="https://www.example.com"><br>
+					</div>
+					<div class="my-form-group">
+						<label>Reset formulier:</label>
+						<input class="format" type="reset" name="reset" value="Reset">
+					</div>
+					<button class="button" type="submit">Submit</button>
+					<input type="hidden" name="form-name" value="contact">
+					<script src="script.js"></script>
+				</form>
+			</main>
+		</section>
+	</article>
+	<footer>
+		<h3>
+			Eerste Semantische HTML door Stefan Adriaans | Pagina 1
+		</h3>
+		<form action="" method="get"></form>
+	</footer>
+</body>
+
+</html>
